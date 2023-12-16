@@ -37,7 +37,7 @@ To access the project plan, please visit the following URL: [Vendor System API](
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/nirenpatel738/vendorsystem.git backend
+   git clone https://github.com/nirenpatel738/vendorsystem.git
    cd backend
    ```
 2. Create a virtual environment and install dependencies:
@@ -72,7 +72,7 @@ Below is a summary of the available API endpoints:
 | Endpoint               | Method      | Description                           |
 | ---------------------- | ----------- | ------------------------------------- |
 | `/api/vendors/register/`      | POST        | Create a new vendor.                  |
-| `/api/vendors/login/`      | POST        | Create a new vendor.                  |
+| `/api/vendors/login/`      | POST        | Login vendor.                  |
 | `/api/vendors/vendors_list/`      | GET         | List all vendors.                     |
 | `/api/vendors/vendor_profile/{id}/` | GET         | Retrieve a specific vendor's details. |
 | `/api/vendors/update_profile/{id}/` | PUT / PATCH | Update a vendor's details.            |
@@ -88,7 +88,7 @@ Below is a summary of the available API endpoints:
 | `/api/order/purchase_orders_retrive/{id}/`            | GET          | Retrieve details of a specific purchase order. |
 | `/api/order/purchase_orders_update/{id}/`            | PUT / PATCH  | Update a purchase order.                       |
 | `/api/order/purchase_orders_delete/{id}/`            | DELETE       | Delete a purchase order.                       |
-| `/api/order/purchase_orders/{id}/acknowledge` | PUT | PATCH | Acknowledge a purchase order.                  |
+| `/api/order/purchase_orders/{id}/acknowledge` | POST | Acknowledge a purchase order.                  |
 
 **Vendor Performance Evaluation**
 
