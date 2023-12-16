@@ -1,6 +1,5 @@
 from django.contrib import admin
 
-# from order.models import PurchaseOrder
+from order.models import PurchaseOrder
 
-
-# admin.site.regiter(PurchaseOrder)
+admin.site.register(PurchaseOrder)

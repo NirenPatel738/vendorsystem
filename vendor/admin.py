@@ -1,7 +1,7 @@
 from django.contrib import admin
 
 # Register your models here.
-# from vendor.models import Vendor#, HistoricalPerformance
+from vendor.models import Vendor, HistoricalPerformance
 
-# admin.site.regiter(Vendor)
-# admin.site.regiter(HistoricalPerformance)
+admin.site.register(Vendor)
+admin.site.register(HistoricalPerformance)
